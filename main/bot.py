@@ -1,28 +1,28 @@
 import discord
 from discord.ext import commands
-import asyncio
 import os
+from os.path import join, dirname
+from dotenv import load_dotenv
+from main.blackjack import BlackJack
 
-client = commands.Bot(command_prefix=['dealer'])
+
+dotenv_path = join(dirname(__file__), '.env')
+
+load_dotenv(dotenv_path)
+
+client = commands.Bot(command_prefix=['dealer ', 'd'])
 
 
-# Event detects if a specific activity has happened
 @client.event
 async def on_ready():
     print('Bot is ready.')
 
 
 @client.command()
-async def play(ctx):
-    # await ctx.send()
-    pass
+async def ping(ctx):
+    await ctx.send(f'Pong! {round(client.latency)*1000}ms')
 
 
-@client.command()
-async def hit(ctx):
-    pass
-
-
-@client.command()
-async def stand(ctx):
-    pass
+# Must be at the bottom of the script
+client.add_cog(BlackJack(client))
+client.run(os.getenv('_TOKEN'))
