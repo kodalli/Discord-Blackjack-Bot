@@ -191,7 +191,7 @@ async def print_cards(ctx, player: Hand, dealer: Hand, hidden: bool = False) -> 
     await ctx.send(file=discord.File(write_hand_to_file(dealer, hidden)))
 
     await ctx.send(file=discord.File(write_hand_to_file(player)))
-    await send_embed(ctx, f"{ctx.message.author.name} score: {player.score}\n{ctx.message.author.name} cards:")
+    await send_embed(ctx, f"{ctx.message.author.nick} score: {player.score}\n{ctx.message.author.nick} cards:")
 
 
 async def send_embed(ctx, message: str) -> None:
