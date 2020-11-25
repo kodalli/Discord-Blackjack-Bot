@@ -12,3 +12,11 @@ $ pip3 install -r requirements.txt
 ```
 
 Next, setup a `.env` file in the main directory:
+
+``` bash
+_TOKEN=<Discord Token>
+_USERNAME=<MongoDB Atlas Username>
+_PASSWORD=<MongoDB Atlas Password>
+_DATABASE=<MongoDatabase.MongoCollection>
+_CLUSTER=<cluster#>
+```
