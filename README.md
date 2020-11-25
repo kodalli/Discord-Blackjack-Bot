@@ -10,4 +10,5 @@ From the repository's main directory:
 ``` bash
 $ pip3 install -r requirements.txt
 ```
-Then setup a `.env` file in the main directory:
+
+Next, setup a `.env` file in the main directory:
