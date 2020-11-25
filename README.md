@@ -34,3 +34,15 @@ $ python bot.py
 ```
 
 Alternatively, it can be deployed on heroku's cloud platform using the Procfile included.
+
+## How to play
+
+The following commands are support by the Blackjack bot:
+
+``` bash
+dealer play
+dealer hit
+dealer stay
+```
+
+`play` starts the game with the dealer drawing two cards for themself and the player. The dealer will hide one of their cards until it is time to reveal the cards. The player can then decide to `hit` inorder to draw another card or `stand` and allow the dealer to reveal their cards. If the player total point count of their hand exceeds 21 they bust, if they get 21 its a Blackjack and they win, or if its below 21 and the player `stand`s the dealer will reveal their cards. The dealer will try to win in the same way attempting to `hit` until their score is higher than the player or they bust. 
