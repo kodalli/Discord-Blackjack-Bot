@@ -1,0 +1,6 @@
+discord.py[voice]
+requests
+pymongo
+dnspython
+opencv-python-headless
+python-dotenv
