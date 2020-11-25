@@ -4,3 +4,10 @@
 ![til](https://media.giphy.com/media/Hjx4WONVX1ferlJZsG/giphy.gif)
 
 ## How to install
+
+From the repository's main directory:
+
+``` bash
+$ pip3 install -r requirements.txt
+```
+Then setup a `.env` file in the main directory:
