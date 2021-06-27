@@ -37,7 +37,7 @@ Alternatively, it can be deployed on heroku's cloud platform using the Procfile 
 
 ## How to play
 
-The following commands are support by the Blackjack bot:
+The following commands are supported by the Blackjack bot:
 
 ``` bash
 dealer play
